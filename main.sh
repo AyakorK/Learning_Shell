@@ -3,8 +3,8 @@
 #          Otherwise delete file without confirmation
 #	   Author: Guillaume MORET
 # --------------------------------------"
-cd $1
-VAR="`ls -a | grep .important `"
+
+VAR="`ls -a $1 | grep .important `"
 echo $VAR
 answer=""
 if [ $VAR ]; then
